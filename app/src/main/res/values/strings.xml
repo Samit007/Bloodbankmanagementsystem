@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Blood bank management system</string>
+    <string name="title_activity_register_page">RegisterPage</string>
+    <string name="blood">Choose a country</string>
+
+    <string-array name="blood_group">
+        <item>A(+ve)</item>
+        <item>A(-ve)</item>
+        <item>B(+ve)</item>
+        <item>B(-ve)</item>
+        <item>AB(+ve)</item>
+        <item>AB(-ve)</item>
+        <item>O(+ve)</item>
+        <item>O(-ve)</item>
+    </string-array>
 </resources>
