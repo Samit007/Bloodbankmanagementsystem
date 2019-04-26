@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginPage">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/redbox"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Login Here"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="60dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"
+            android:text="Username:"
+            android:textColor="#000"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/etUsernamelogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="45dp"
+            android:layout_toRightOf="@+id/tvusername"
+            android:background="@drawable/textbox"
+            android:text="admin"
+            android:textColor="#000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tvpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvusername"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"
+            android:text="Password:"
+            android:textColor="#000"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/etPasswordlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etUsernamelogin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="45dp"
+            android:layout_toRightOf="@+id/tvpassword"
+            android:background="@drawable/textbox"
+            android:text="admin"
+            android:inputType="textPassword"
+            android:textColor="#000"
+            android:textSize="30dp" />
+        <TextView
+            android:id="@+id/tvIncorrect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvpassword"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#FF0000"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Login" />
+</LinearLayout>
+</ScrollView>

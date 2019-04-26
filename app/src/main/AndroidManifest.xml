@@ -9,8 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RegisterPage"></activity>
+        <activity android:name=".Search_blood"/>
+        <activity android:name=".Dashboard" />
+        <activity android:name=".RegisterPage" />
         <activity android:name=".LoginPage" />
+        <activity android:name=".DetailsActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
