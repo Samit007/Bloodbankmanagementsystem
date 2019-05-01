@@ -13,4 +13,9 @@
         <item>O(+ve)</item>
         <item>O(-ve)</item>
     </string-array>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
 </resources>

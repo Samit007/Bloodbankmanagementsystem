@@ -22,7 +22,7 @@ public class Search_blood extends AppCompatActivity {
 
         //create list of details
         List<Details> detailsList = new ArrayList<>();
-        detailsList.add(new Details(R.drawable.noavatar,"Samit Bhattarai","9844687013","bhattarai905@gmail.com","Maitidevi","M","O+ve"));
+        detailsList.add(new Details(R.drawable.noavatar,"Samit Bhattarai","9844687013","bhattarai905@gmail.com","Maitidevi","Male","O+ve"));
 
         DetailsAdapter detailsAdapter=new DetailsAdapter(this,detailsList);
         recyclerView.setAdapter(detailsAdapter);

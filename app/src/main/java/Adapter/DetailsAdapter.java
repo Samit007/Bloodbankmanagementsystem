@@ -40,12 +40,6 @@ public class DetailsAdapter extends RecyclerView.Adapter<DetailsAdapter.DetailsV
         detailsViewHolder.imgProfile.setImageResource(details.getImageId());
         detailsViewHolder.tvName.setText(details.getName());
         detailsViewHolder.tvBlood.setText(details.getBlood());
-//        detailsViewHolder.tvGender.setText(details.getGender());
-//        detailsViewHolder.tvAddress.setText(details.getAddress());
-//        detailsViewHolder.tvEmail.setText(details.getEmailId());
-//        detailsViewHolder.tvPhoneNo.setText(details.getPhoneNo());
-//
-
 
         detailsViewHolder.imgProfile.setOnClickListener(new View.OnClickListener(){
 
