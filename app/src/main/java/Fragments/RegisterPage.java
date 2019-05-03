@@ -59,9 +59,8 @@ public class RegisterPage extends Fragment {
         etGender = view.findViewById(R.id.etGender);
         etBloodGroup = view.findViewById(R.id.etBloodgroup);
         btnRegister = view.findViewById(R.id.btnRegister);
-        btnReset = view.findViewById(R.id.btnReset);
         btnImage = view.findViewById(R.id.btnImg);
-        btnPhoto = view.findViewById(R.id.btnphoto);
+        btnPhoto = view.findViewById(R.id.btnPhoto);
         byteArrayOutputStream = new ByteArrayOutputStream();
         checkPermission();
 
@@ -85,12 +84,6 @@ public class RegisterPage extends Fragment {
                 }
             }
         });
-        btnReset.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-            }
-        });
-
 
         return view;
     }

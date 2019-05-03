@@ -15,25 +15,7 @@ android:layout_height="match_parent">
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/redbox"
-            android:fontFamily="sans-serif"
-            android:text="Welcome to the blood Bank"
-            android:textAlignment="center"
-            android:textColor="#FFF"
-            android:textSize="30dp"
-            android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnSearch"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Search for Blood"
-            android:textSize="20dp" />
 
         <Button
             android:id="@+id/btnLoginpage"

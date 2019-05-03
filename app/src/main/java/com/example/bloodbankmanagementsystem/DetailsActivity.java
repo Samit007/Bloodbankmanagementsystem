@@ -46,7 +46,6 @@ public class DetailsActivity extends AppCompatActivity {
         if (bundle!=null){
             imgProfile.setImageResource(bundle.getInt("image"));
         }
-
     }
 }
 

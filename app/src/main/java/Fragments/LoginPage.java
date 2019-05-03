@@ -35,7 +35,7 @@ public class LoginPage extends Fragment  {
         etUsername = view.findViewById(R.id.etUsernamelogin);
         etPassword = view.findViewById(R.id.etPasswordlogin);
         tvIncorrect = view.findViewById(R.id.tvIncorrect);
-        btnLogin = view.findViewById(R.id.btnLogin);
+        btnLogin = view.findViewById(R.id.btnlogin);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
