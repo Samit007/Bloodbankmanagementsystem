@@ -7,11 +7,11 @@
     tools:context=".DetailsActivity"
     android:orientation="vertical">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/imgProfile"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/noavatar" />
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+        <!--android:id="@+id/imgProfile"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:src="@drawable/noavatar" />-->
 
     <TextView
         android:id="@+id/tvName"

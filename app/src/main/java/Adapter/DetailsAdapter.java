@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.example.bloodbankmanagementsystem.DetailsActivity;
 import com.example.bloodbankmanagementsystem.R;
+import com.example.bloodbankmanagementsystem.User;
 
 import java.util.List;
 
@@ -20,11 +21,11 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class DetailsAdapter extends RecyclerView.Adapter<DetailsAdapter.DetailsViewHolder> {
     Context mContext;
-    List<Details> detailsList;
+    List<User> userList;
 
-    public DetailsAdapter(Context mContext, List<Details> detailsList) {
+    public DetailsAdapter(Context mContext, List<User> userList) {
         this.mContext = mContext;
-        this.detailsList = detailsList;
+        this.userList = userList;
     }
 
     @NonNull
@@ -36,23 +37,22 @@ public class DetailsAdapter extends RecyclerView.Adapter<DetailsAdapter.DetailsV
 
     @Override
     public void onBindViewHolder(@NonNull DetailsViewHolder detailsViewHolder, int i) {
-        final Details details=detailsList.get(i);
-        detailsViewHolder.imgProfile.setImageResource(details.getImageId());
-        detailsViewHolder.tvName.setText(details.getName());
-        detailsViewHolder.tvBlood.setText(details.getBlood());
+        final User user=userList.get(i);
+        detailsViewHolder.tvName.setText(user.getFullname());
+        detailsViewHolder.tvBlood.setText(user.getBlood());
 
-        detailsViewHolder.imgProfile.setOnClickListener(new View.OnClickListener(){
+        detailsViewHolder.tvName.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(mContext,DetailsActivity.class);
-                intent.putExtra("image",details.getImageId());
-                intent.putExtra("name",details.getName());
-                intent.putExtra("phone",details.getPhoneNo());
-                intent.putExtra("email",details.getEmailId());
-                intent.putExtra("address",details.getAddress());
-                intent.putExtra("gender",details.getGender());
-                intent.putExtra("blood",details.getBlood());
+                //intent.putExtra("image",details.getImageId());
+                intent.putExtra("fullname",user.getFullname());
+                intent.putExtra("phoneNo",user.getPhoneNo());
+                intent.putExtra("email",user.getEmail());
+                intent.putExtra("address",user.getAddress());
+                intent.putExtra("gender",user.getGender());
+                intent.putExtra("blood",user.getBlood());
 
                 mContext.startActivity(intent);
 
@@ -62,20 +62,20 @@ public class DetailsAdapter extends RecyclerView.Adapter<DetailsAdapter.DetailsV
 
     @Override
     public int getItemCount() {
-        return detailsList.size();
+        return userList.size();
     }
 
     public class DetailsViewHolder extends RecyclerView.ViewHolder {
-        CircleImageView imgProfile;
+        //CircleImageView imgProfile;
         TextView tvName,tvPhoneNo,tvEmail,tvAddress,tvGender,tvBlood;
         public DetailsViewHolder(@NonNull View itemView) {
             super(itemView);
-            imgProfile=itemView.findViewById(R.id.imgProfile);
+          //  imgProfile=itemView.findViewById(R.id.imgProfile);
             tvName=itemView.findViewById(R.id.tvName);
-            tvPhoneNo=itemView.findViewById(R.id.tvPhoneNo);
-            tvEmail=itemView.findViewById(R.id.tvEmail);
-            tvAddress=itemView.findViewById(R.id.tvAddress);
-            tvGender=itemView.findViewById(R.id.tvGender);
+//            tvPhoneNo=itemView.findViewById(R.id.tvPhoneNo);
+//            tvEmail=itemView.findViewById(R.id.tvEmail);
+//            tvAddress=itemView.findViewById(R.id.tvAddress);
+//            tvGender=itemView.findViewById(R.id.tvGender);
             tvBlood=itemView.findViewById(R.id.tvBlood);
         }
 

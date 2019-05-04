@@ -3,6 +3,7 @@ package Fragments;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.TextUtils;
@@ -48,6 +49,7 @@ public class LoginPage extends Fragment  {
     }
 
     private void checkUser() {
+
         SharedPreferences sharedPreferences=getActivity().getSharedPreferences("User",MODE_PRIVATE);
         String username=sharedPreferences.getString("username","");
         String password=sharedPreferences.getString("password","");
