@@ -1,4 +1,4 @@
-package com.example.bloodbankmanagementsystem;
+package Model;
 
 public class User {
     private int UserID;

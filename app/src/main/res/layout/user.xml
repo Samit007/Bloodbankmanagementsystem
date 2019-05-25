@@ -1,28 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="150dp"
     android:layout_margin="20dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/backgroundwhite">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/searchbyblood"
-            android:hint="Search by blood"
-            android:gravity="center"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/searchbyblood"
-        android:id="@+id/btnsearchbyblood"
-        android:text="Search by blood"
-        android:textAllCaps="false"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -33,24 +20,22 @@
 
     <TextView
         android:id="@+id/tvName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/textStyle"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_toEndOf="@+id/imgProfile"
         android:hint="Contact name"
-        android:textSize="20sp" />
+        android:drawableLeft="@drawable/ic_person_black_24dp"/>
 
     <TextView
         android:id="@+id/tvBlood"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/textStyle"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_blood"
         android:layout_below="@+id/tvName"
         android:layout_toEndOf="@+id/imgProfile"
-        android:hint="Bloodgroup"
-        android:textSize="20sp" />
+        android:hint="Bloodgroup" />
     </RelativeLayout>
 
 </LinearLayout>
